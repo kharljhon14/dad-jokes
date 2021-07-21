@@ -177,6 +177,8 @@ html {
    align-items: center;
    justify-content: center;
    text-align: center;
+   pointer-events: none;
+
 }
 
 .joke.show {
@@ -188,6 +190,7 @@ html {
    display: inline;
    opacity: 1;
    pointer-events: none;
+   z-index: 100;
 }
 
 .joke p {
@@ -201,19 +204,19 @@ html {
 .punchline {
    display: none;
    opacity: 0;
-   pointer-events: none;
 }
 
 .punchline.show {
    display: inline;
    opacity: 1;
    pointer-events: none;
+
 }
 
 .punchline p strong {
    font-size: 3rem;
-   pointer-events: none;
    color: #fff;
+   pointer-events: none;
 }
 
 .punchline span {
@@ -222,6 +225,8 @@ html {
    font-weight: 200;
    pointer-events: none;
    color: #fff;
+   pointer-events: none;
+
 }
 
 .joke-container i {
@@ -232,6 +237,7 @@ html {
    opacity: 0.5;
    pointer-events: none;
    transition: opacity 0.5s;
+   
 }
 
 .fade.fading {
@@ -244,7 +250,7 @@ html {
    width: 40%;
    height: 12vw;
    background-color: #e76f51;
-   position: relative;
+
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -470,8 +476,8 @@ html {
       font-size: 15rem;
    }
    .trig {
-      width: 60%;
-      height: 30vw;
+      width: 50%;
+      height: 20vw;
    }
    .gallery-link{
       width: 40rem;
@@ -515,7 +521,7 @@ html {
       font-size: 15rem;
    }
    .trig {
-      width: 80%;
+      width: 50%;
       height: 30vw;
    }
 }
@@ -539,10 +545,6 @@ html {
 
    .joke-container i {
       font-size: 10rem;
-   }
-   .trig {
-      width: 80%;
-      height: 30vw;
    }
 }
 
@@ -577,16 +579,15 @@ html {
    .joke p {
       font-size: 2rem;
    }
-
-   .trig {
-      width: 80%;
-      height: 30vw;
+   html {
+      font-size: 30%;
    }
+
 }
 
 @media (max-width: 550px) {
    html {
-      font-size: 40%;
+      font-size: 30%;
    }
 
    .navbar-link {
