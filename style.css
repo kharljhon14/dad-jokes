@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* Common style */
 * {
    margin: 0;
@@ -6,8 +6,8 @@
    box-sizing: border-box;
    text-decoration: none;
    outline: none;
-   font-family: "Nunito", sans-serif;
-   font-weight: 400;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 200;
 }
 
 html {
@@ -38,6 +38,7 @@ html {
    align-items: center;
    box-shadow: 0.2rem 0.2rem 0.2rem #000;
    transition: top 0.4s;
+   z-index: 500;
 }
 
 .navbar.change {
@@ -106,7 +107,7 @@ html {
    box-shadow: 0.1rem 0.1rem 0.1rem #000, -0.1rem -0.1rem 0.1rem #000;
    cursor: pointer;
    transition: top 0.4s 0.2s;
-   z-index: 100;
+   z-index: 600;
 }
 
 .menu::before {
@@ -178,7 +179,6 @@ html {
    justify-content: center;
    text-align: center;
    pointer-events: none;
-
 }
 
 .joke.show {
@@ -195,7 +195,7 @@ html {
 
 .joke p {
    color: #fff;
-   font-size: 3rem;
+   font-size: 2.5rem;
    padding: 2rem;
    border: 0.4rem solid #fff;
    pointer-events: none;
@@ -214,7 +214,7 @@ html {
 }
 
 .punchline p strong {
-   font-size: 3rem;
+   font-size: 2.5rem;
    color: #fff;
    pointer-events: none;
 }
@@ -250,13 +250,21 @@ html {
    width: 40%;
    height: 12vw;
    background-color: #e76f51;
-
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
    text-align: center;
    cursor: pointer;
+   transition: transform .3s ease-in;
+}
+
+.trig:hover{
+   transform: scale(1.1);
+}
+
+.trig:nth-child(1) {
+   margin-top: 5rem;
 }
 
 .trig:nth-child(2) {
@@ -467,10 +475,10 @@ html {
       font-size: 15rem;
    }
    .punchline p strong {
-      font-size: 4rem;
+      font-size: 2.5rem;
    }
    .joke p {
-      font-size: 4rem;
+      font-size: 2.5rem;
    }
    .joke-container i {
       font-size: 15rem;
@@ -512,10 +520,10 @@ html {
       font-size: 13rem;
    }
    .punchline p strong {
-      font-size: 4rem;
+      font-size: 2.5rem;
    }
    .joke p {
-      font-size: 4rem;
+      font-size: 2.5rem;
    }
    .joke-container i {
       font-size: 15rem;

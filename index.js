@@ -1,12 +1,12 @@
+//Using ES6 not gonna work for IE
+
 //Toggle for the navbar menu
 //Trigger if the user click the navbar toggle display
 document.querySelector(".menu").addEventListener("click", () => {
-   //
    document.querySelectorAll(".target").forEach((item) => {
       item.classList.toggle("change");
    });
 });
-
 
 //a loop that show each jokes in the hero header
 const jokes = document.querySelectorAll(".section-1-jokes i");
@@ -26,9 +26,8 @@ setInterval(() => {
    } else joke.nextElementSibling.classList.add("change");
 }, 3000);
 
-
 //Dad Jokes Show and hide function
-//Works for small numbers of elements to loop through
+//Works well for small numbers of elements to loop through
 //Dynamic for easy adding of jokes
 const triggers = document.querySelectorAll(".trig");
 triggers.forEach((container) => {
